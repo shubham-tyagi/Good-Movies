@@ -1,0 +1,29 @@
+.App {
+	text-align: center;
+}
+.App .btn-genre {
+	cursor: pointer;
+	background: #e5e7eb;
+	border-radius: 0.5rem;
+	padding: 0.5rem 1rem;
+	border: 1px solid black;
+	margin: 1rem 0.3rem;
+}
+
+.App .list {
+	list-style-type: none;
+}
+
+.App .list-item {
+	border: 1px solid black;
+	border-radius: 1rem;
+	margin: 1rem auto;
+	display: block;
+	max-width: 10rem;
+	padding: 1rem;
+}
+.App .list-item .movie-rating {
+	display: inline-block;
+	margin-right: 5px;
+	text-align: left;
+}
