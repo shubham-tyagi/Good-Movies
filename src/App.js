@@ -5,32 +5,36 @@ function App() {
 	const movies = {
 		comedy: [
 			{
-				Name: "Dhamaal",
-				Rating: 8.4,
+				Name: "Welcome",
+				Rating: "8.4/10",
 			},
 			{
-				Name: "Dhol",
-				Rating: 8.4,
+				Name: "Dhamaal",
+				Rating: "8/10",
 			},
 		],
 		thriller: [
 			{
-				Name: "Brooklyn Nine-Nine",
-				Rating: 8.4,
+				Name: "Andadhun",
+				Rating: "8.3/10",
 			},
 			{
-				Name: "Brooklyn Nine-Nine",
-				Rating: 8.4,
+				Name: "Drishyam",
+				Rating: "8.1/10",
+			},
+			{
+				Name: "Detective Byomkesh",
+				Rating: "7.5/10",
 			},
 		],
 		crime: [
 			{
-				Name: "Brooklyn Nine-Nine",
-				Rating: 8.4,
+				Name: "fast and furious 8",
+				Rating: "8.5/10",
 			},
 			{
-				Name: "Brooklyn Nine-Nine",
-				Rating: 8.4,
+				Name: "Wolf of wall street",
+				Rating: "8/10",
 			},
 		],
 	};
@@ -45,19 +49,23 @@ function App() {
 
 	return (
 		<div className="App">
-			<h1>hello</h1>
-			{genres.map((genre) => {
-				return (
-					<button
-						onClick={() => {
-							onBtnClickHandler(genre);
-						}}
-						className="btn-genre"
-					>
-						{genre}
-					</button>
-				);
-			})}
+			<h1>🎥 Good Movies</h1>
+			<hr></hr>
+			<p>Checkout my favourite movies , select a genre to get started</p>
+			<div class="movie-genre">
+				{genres.map((genre) => {
+					return (
+						<button
+							onClick={() => {
+								onBtnClickHandler(genre);
+							}}
+							className="btn-genre"
+						>
+							{genre}
+						</button>
+					);
+				})}
+			</div>
 
 			<ul className="list">
 				{movies[selectedGenre].map((movie) => {
